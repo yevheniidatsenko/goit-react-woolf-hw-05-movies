@@ -1,0 +1,28 @@
+.List {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Item {
+  padding: 10px;
+  border: 1px solid #424242;
+  border-radius: 5px;
+  background-color: #ebebeb;
+}
+
+.Wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Author {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Text {
+  font-style: italic;
+}

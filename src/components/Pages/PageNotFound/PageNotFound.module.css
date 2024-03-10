@@ -1,0 +1,22 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.Btn {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
