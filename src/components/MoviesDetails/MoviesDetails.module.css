@@ -7,17 +7,18 @@
 .DetailsTitle {
   padding-top: 20px;
   font-size: 45px;
-  margin-bottom: 130px;
+  margin-bottom: 70px;
 }
 
 .DetailsInfo {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .DetailsInfoBord {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   gap: 20px;
 }
@@ -30,6 +31,7 @@
 .AdditionalTitle {
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .AdditionalList {
