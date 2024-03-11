@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
-import { getMoviesDetails } from '../../API/MoviesAPI';
+import { getMoviesDetails } from '../../components/API/MoviesAPI';
 import MoviesDetails from 'components/MoviesDetails/MoviesDetails';
 import styles from './MoviesPageDetails.module.css';
 

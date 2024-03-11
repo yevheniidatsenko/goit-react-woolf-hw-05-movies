@@ -1,5 +1,5 @@
 import React from 'react';
-import NotFound from '../../Images/error.webp';
+import NotFound from '../../components/Images/error.webp';
 import styles from './PageNotFound.module.css';
 
 const PageNotFound = () => {

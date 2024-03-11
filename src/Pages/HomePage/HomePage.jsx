@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
-import { getTrendingDay } from '../../API/MoviesAPI';
-import MoviesList from '../../MoviesList/MoviesList';
+import { getTrendingDay } from '../../components/API/MoviesAPI';
+import MoviesList from '../../components/MoviesList/MoviesList';
 import styles from './HomePage.module.css';
 
 const HomePage = () => {
@@ -26,14 +26,16 @@ const HomePage = () => {
     trendingMovies();
   }, []);
 
-  const rootBg = document.querySelector('body');
-  rootBg.style.backgroundImage = 'none';
+  useEffect(() => {
+    const rootBg = document.querySelector('body');
+    rootBg.style.backgroundImage = 'none';
+  }, []);
 
   return (
     <div>
-      <h1 className={styles.Title}>Trenting today</h1>
-      {error && <h2>error: {error}</h2>}
-      {moviesTrending && <MoviesList collection={moviesTrending} />}
+      <h1 className={styles.Title}>Trending today</h1>
+      {error && <h2>Error: {error}</h2>}
+      {moviesTrending.length > 0 && <MoviesList collection={moviesTrending} />}
     </div>
   );
 };
